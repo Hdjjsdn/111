@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Change Background Color</title>
     <style>
-        body {
-            background-color: #f0f0f0; /* 设置默认背景颜色 */
-        }
+        body {background-color: #f0f0f0; /* 设置默认背景颜色 */}
     </style>
 </head>
 <body>
@@ -15,10 +13,7 @@
     <button onclick="changeColor()">Click to change color</button>
 
     <script>
-        function changeColor() {
-            var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16); // 生成随机颜色
-            document.body.style.backgroundColor = randomColor; // 改变背景颜色
-        }
+        function changeColor() {var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16); // 生成随机颜色document.body.style.backgroundColor = randomColor; // 改变背景颜色}
     </script>
 </body>
 </html>
