@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Data Entry Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
     <style>
         body {
-            background: linear-gradient(to bottom, #ff0000, #cc0000); /* Red gradient */
-            color: white; /* Set text color to white for better contrast */
+            background-color: #f0f0f0; /* 设置默认背景颜色 */
         }
     </style>
 </head>
 <body>
-    <h2>Data Entry Form</h2>
-    <form action="/submit_form" method="post">
-        <label for="id">Identification Number:</label><br>
-        <input type="text" id="id" name="id"><br>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="gender">Gender:</label><br>
-        <select id="gender" name="gender">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-        </select><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <input type="submit" value="Submit">
-    </form>
+    <h2>Change Background Color</h2>
+    <button onclick="changeColor()">Click to change color</button>
+
+    <script>
+        function changeColor() {
+            var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16); // 生成随机颜色
+            document.body.style.backgroundColor = randomColor; // 改变背景颜色
+        }
+    </script>
 </body>
 </html>
